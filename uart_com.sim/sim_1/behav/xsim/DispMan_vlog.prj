@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../uart_com.srcs/sources_1/new/uart_tx.v" \
+"../../../../uart_com.srcs/sources_1/new/clk_gen.v" \
+"../../../../uart_com.srcs/sources_1/new/uart_rx.v" \
+"../../../../uart_com.srcs/sources_1/new/uart.v" \
+"../../../../uart_com.srcs/sources_1/new/uart_nexys.v" \
+"../../../../uart_com.srcs/sources_1/new/hex2ssd.v" \
+"../../../../uart_com.srcs/sources_1/new/DispMan.v" \
+"../../../../uart_com.srcs/sources_1/new/RefreshClk.v" \
+"../../../../uart_com.srcs/sim_1/new/uart_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

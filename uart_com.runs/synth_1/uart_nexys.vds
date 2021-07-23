@@ -1,0 +1,571 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 11 01:40:40 2019
+# Process ID: 2844
+# Current directory: G:/hdl_things/uart_com/uart_com.runs/synth_1
+# Command line: vivado.exe -log uart_nexys.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_nexys.tcl
+# Log file: G:/hdl_things/uart_com/uart_com.runs/synth_1/uart_nexys.vds
+# Journal file: G:/hdl_things/uart_com/uart_com.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/Ch_nmay/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source uart_nexys.tcl -notrace
+Command: synth_design -top uart_nexys -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 224 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 365.383 ; gain = 97.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_nexys' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/clk_gen.v:23]
+	Parameter Size bound to: 64 - type: integer 
+	Parameter Reset bound to: 1'b0 
+	Parameter Running bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/clk_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_tx.v:22]
+	Parameter Idle bound to: 3'b000 
+	Parameter StartBit bound to: 3'b001 
+	Parameter DataBits bound to: 3'b010 
+	Parameter StopBit bound to: 3'b011 
+	Parameter Clean bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (2#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_rx.v:23]
+	Parameter Idle bound to: 3'b000 
+	Parameter StartBit bound to: 3'b001 
+	Parameter DataBits bound to: 3'b010 
+	Parameter StopBit bound to: 3'b011 
+	Parameter Clean bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (4#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DispMan' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/DispMan.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RefreshClk' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/RefreshClk.v:23]
+	Parameter Size bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RefreshClk' (5#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/RefreshClk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex2ssd' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/hex2ssd.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hex2ssd' (6#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/hex2ssd.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DispMan' (7#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/DispMan.v:22]
+INFO: [Synth 8-4471] merging register 'load_reg' into 'rst_reg' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:62]
+WARNING: [Synth 8-6014] Unused sequential element load_reg was removed.  [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:62]
+WARNING: [Synth 8-5788] Register rx_data_reg in module uart_nexys is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:58]
+WARNING: [Synth 8-5788] Register tx_byte_reg in module uart_nexys is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'uart_nexys' (8#1) [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 420.250 ; gain = 151.898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin d1:data[7][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[7][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[7][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[6][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[6][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[6][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[5][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[5][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[5][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[4][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[4][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[4][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[3][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[3][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[3][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[2][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[2][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[2][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[1][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[1][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[1][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[0][3] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[0][2] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+WARNING: [Synth 8-3295] tying undriven pin d1:data[0][1] to constant 0 [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:65]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 420.250 ; gain = 151.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 420.250 ; gain = 151.898
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/hdl_things/uart_com/uart_com.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [G:/hdl_things/uart_com/uart_com.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/hdl_things/uart_com/uart_com.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_nexys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_nexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 767.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 767.789 ; gain = 499.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 767.789 ; gain = 499.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 767.789 ; gain = 499.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "baud_reg" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-5544] ROM "serial_tx" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'tx_byte_reg[7:0]' into 'rx_data_reg[7:0]' [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:62]
+WARNING: [Synth 8-6014] Unused sequential element tx_byte_reg was removed.  [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_nexys.v:62]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                              000 |                              000
+                StartBit |                              001 |                              001
+                DataBits |                              010 |                              010
+                 StopBit |                              011 |                              011
+                   Clean |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                            00001 |                              000
+                StartBit |                            00010 |                              001
+                DataBits |                            00100 |                              010
+                 StopBit |                            01000 |                              011
+                   Clean |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 767.789 ; gain = 499.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   7 Input     63 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_nexys 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input     63 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 9     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+Module RefreshClk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module DispMan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element u1/utx/tx_active_reg was removed.  [G:/hdl_things/uart_com/uart_com.srcs/sources_1/new/uart_tx.v:59]
+INFO: [Synth 8-5546] ROM "u1/c1/baud_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'baud_reg[18]' (FDRE) to 'baud_reg[63]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[5]' (FDRE) to 'baud_reg[63]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[63]' (FDRE) to 'baud_reg[62]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[62]' (FDRE) to 'baud_reg[61]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[61]' (FDRE) to 'baud_reg[60]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[60]' (FDRE) to 'baud_reg[59]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[59]' (FDRE) to 'baud_reg[58]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[58]' (FDRE) to 'baud_reg[57]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[57]' (FDRE) to 'baud_reg[56]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[56]' (FDRE) to 'baud_reg[55]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[55]' (FDRE) to 'baud_reg[54]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[54]' (FDRE) to 'baud_reg[53]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[53]' (FDRE) to 'baud_reg[52]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[52]' (FDRE) to 'baud_reg[51]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[51]' (FDRE) to 'baud_reg[50]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[50]' (FDRE) to 'baud_reg[49]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[49]' (FDRE) to 'baud_reg[48]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[48]' (FDRE) to 'baud_reg[47]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[47]' (FDRE) to 'baud_reg[46]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[46]' (FDRE) to 'baud_reg[45]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[45]' (FDRE) to 'baud_reg[44]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[44]' (FDRE) to 'baud_reg[43]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[43]' (FDRE) to 'baud_reg[42]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[42]' (FDRE) to 'baud_reg[41]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[41]' (FDRE) to 'baud_reg[40]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[40]' (FDRE) to 'baud_reg[39]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[39]' (FDRE) to 'baud_reg[38]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[38]' (FDRE) to 'baud_reg[37]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[37]' (FDRE) to 'baud_reg[36]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[36]' (FDRE) to 'baud_reg[35]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[35]' (FDRE) to 'baud_reg[34]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[34]' (FDRE) to 'baud_reg[33]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[33]' (FDRE) to 'baud_reg[32]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[32]' (FDRE) to 'baud_reg[31]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[31]' (FDRE) to 'baud_reg[30]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[30]' (FDRE) to 'baud_reg[29]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[29]' (FDRE) to 'baud_reg[28]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[28]' (FDRE) to 'baud_reg[27]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[27]' (FDRE) to 'baud_reg[26]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[26]' (FDRE) to 'baud_reg[25]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[25]' (FDRE) to 'baud_reg[24]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[24]' (FDRE) to 'baud_reg[23]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[23]' (FDRE) to 'baud_reg[22]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[22]' (FDRE) to 'baud_reg[21]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[21]' (FDRE) to 'baud_reg[20]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[20]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[0]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[1]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[2]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[3]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[14]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[4]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[12]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[11]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[10]' (FDSE) to 'baud_reg[13]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[9]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[8]' (FDSE) to 'baud_reg[13]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[7]' (FDSE) to 'baud_reg[13]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[6]' (FDRE) to 'baud_reg[19]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[19]' (FDRE) to 'baud_reg[17]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[15]' (FDRE) to 'baud_reg[17]'
+INFO: [Synth 8-3886] merging instance 'baud_reg[16]' (FDRE) to 'baud_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\baud_reg[17] )
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[0]' (FDE) to 'u1/c1/baud_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[4]' (FDE) to 'u1/c1/baud_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[6]' (FDE) to 'u1/c1/baud_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[11]' (FDE) to 'u1/c1/baud_reg_reg[38]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[20]' (FDE) to 'u1/c1/baud_reg_reg[43]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[38]' (FDE) to 'u1/c1/baud_reg_reg[50]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[39]' (FDE) to 'u1/c1/baud_reg_reg[51]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u1/c1/baud_reg_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d1/DP_reg )
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[1]' (FDE) to 'u1/c1/baud_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[2]' (FDE) to 'u1/c1/baud_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[3]' (FDE) to 'u1/c1/baud_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[5]' (FDE) to 'u1/c1/baud_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[63]' (FDE) to 'u1/c1/baud_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[7]' (FDE) to 'u1/c1/baud_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[8]' (FDE) to 'u1/c1/baud_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[9]' (FDE) to 'u1/c1/baud_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[10]' (FDE) to 'u1/c1/baud_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[12]' (FDE) to 'u1/c1/baud_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[13]' (FDE) to 'u1/c1/baud_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[14]' (FDE) to 'u1/c1/baud_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[15]' (FDE) to 'u1/c1/baud_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[16]' (FDE) to 'u1/c1/baud_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[17]' (FDE) to 'u1/c1/baud_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[18]' (FDE) to 'u1/c1/baud_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[19]' (FDE) to 'u1/c1/baud_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[21]' (FDE) to 'u1/c1/baud_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[22]' (FDE) to 'u1/c1/baud_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[23]' (FDE) to 'u1/c1/baud_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[24]' (FDE) to 'u1/c1/baud_reg_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[25]' (FDE) to 'u1/c1/baud_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[26]' (FDE) to 'u1/c1/baud_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[27]' (FDE) to 'u1/c1/baud_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[28]' (FDE) to 'u1/c1/baud_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[29]' (FDE) to 'u1/c1/baud_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[30]' (FDE) to 'u1/c1/baud_reg_reg[34]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[31]' (FDE) to 'u1/c1/baud_reg_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[32]' (FDE) to 'u1/c1/baud_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[33]' (FDE) to 'u1/c1/baud_reg_reg[35]'
+INFO: [Synth 8-3886] merging instance 'u1/c1/baud_reg_reg[34]' (FDE) to 'u1/c1/baud_reg_reg[37]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u1/c1/baud_reg_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u1/c1/baud_reg_reg[62] )
+WARNING: [Synth 8-3332] Sequential element (baud_reg[17]) is unused and will be removed from module uart_nexys.
+WARNING: [Synth 8-3332] Sequential element (baud_reg[13]) is unused and will be removed from module uart_nexys.
+WARNING: [Synth 8-3332] Sequential element (u1/c1/baud_reg_reg[62]) is unused and will be removed from module uart_nexys.
+WARNING: [Synth 8-3332] Sequential element (u1/c1/baud_reg_reg[55]) is unused and will be removed from module uart_nexys.
+WARNING: [Synth 8-3332] Sequential element (u1/c1/count_reg[0]) is unused and will be removed from module uart_nexys.
+WARNING: [Synth 8-3332] Sequential element (d1/DP_reg) is unused and will be removed from module uart_nexys.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 767.789 ; gain = 499.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 767.789 ; gain = 499.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 774.215 ; gain = 505.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    32|
+|3     |LUT1   |    55|
+|4     |LUT2   |     7|
+|5     |LUT3   |     6|
+|6     |LUT4   |     8|
+|7     |LUT5   |    11|
+|8     |LUT6   |    27|
+|9     |MUXF7  |     1|
+|10    |FDCE   |     1|
+|11    |FDRE   |   193|
+|12    |FDSE   |     5|
+|13    |IBUF   |     2|
+|14    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-----------+------+
+|      |Instance  |Module     |Cells |
++------+----------+-----------+------+
+|1     |top       |           |   367|
+|2     |  d1      |DispMan    |   125|
+|3     |    r_clk |RefreshClk |   108|
+|4     |  u1      |uart       |   209|
+|5     |    c1    |clk_gen    |   112|
+|6     |    urx   |uart_rx    |    55|
+|7     |    utx   |uart_tx    |    42|
++------+----------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 784.996 ; gain = 169.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 784.996 ; gain = 516.645
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+149 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 788.492 ; gain = 532.637
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'G:/hdl_things/uart_com/uart_com.runs/synth_1/uart_nexys.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_nexys_utilization_synth.rpt -pb uart_nexys_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 788.492 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 01:41:33 2019...
